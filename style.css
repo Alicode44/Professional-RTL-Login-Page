@@ -1,0 +1,115 @@
+/*
+استایل های اختصاصی فرم ورود
+تم: Midnight Navy & Gold (کلاسیک و لوکس)
+*/
+
+/* تعریف متغیرهای رنگی برای مدیریت آسان تر */
+:root {
+--primary-navy: #0a192f;    /* سرمه ای تیره برای پس زمینه */
+--accent-gold: #c5a059;     /* طلایی کلاسیک برای دکمه و لینکها */
+--light-gold: #e2c792;      /* طلایی روشن تر برای حالت Hover */
+--text-muted: #6c757d;
+--white: #ffffff;
+}
+
+/* استایل بدنه اصلی */
+body {
+background-color: var(--primary-navy);
+/* استفاده از فونت های استاندارد فارسی در صورت عدم دسترسی به فونت های خاص */
+font-family: 'Tahoma', 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+
+}
+
+/* کانتینر اصلی برای وسطچین کردن کارت در کل صفحه */
+.login-container {
+min-height: 100vh;
+padding: 20px;
+}
+
+/* استایل کارت فرم */
+.login-card {
+width: 100%;
+max-width: 450px;
+border: none;
+border-radius: 15px;
+background-color: var(--white);
+/* ایجاد سایه ملایم برای عمق دادن به کارت */
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* استایل عنوان اصلی */
+.login-title {
+color: var(--primary-navy);
+font-weight: bold;
+font-size: 1.8rem;
+margin-bottom: 10px;
+}
+
+/* استایل فیلدهای ورودی (Input) */
+.custom-input {
+border: 1px solid #ddd;
+padding: 12px;
+border-radius: 8px;
+margin-bottom: 5px;
+transition: all 0.3s ease; /* انیمیشن نرم برای تغییر حالت */
+}
+
+/* تغییر رنگ اینپوت هنگام کلیک (Focus) */
+.custom-input:focus {
+border-color: var(--accent-gold);
+box-shadow: 0 0 0 0.25rem rgba(197, 160, 89, 0.25);
+outline: none;
+}
+
+/* استایل دکمه اصلی ورود */
+.btn-login {
+background-color: var(--accent-gold);
+color: var(--primary-navy);
+font-weight: bold;
+padding: 12px;
+border-radius: 8px;
+border: none;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* حالت Hover دکمه */
+.btn-login:hover {
+background-color: var(--light-gold);
+color: var(--primary-navy);
+transform: translateY(-2px); /* حرکت کوچک به سمت بالا برای حس تعامل */
+}
+
+/* حالت کلیک شدن دکمه */
+.btn-login:active {
+transform: translateY(0);
+}
+
+/* استایل لینک های "فراموشی رمز" و "ثبت نام" */
+.forgot-link, .register-link {
+color: var(--accent-gold);
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+.forgot-link:hover, .register-link:hover {
+text-decoration: underline;
+color: var(--primary-navy);
+}
+
+/* ریسپانسیو سازی: تنظیمات برای نمایش بهتر در موبایل های کوچک */
+@media (max-width: 400px) {
+.card-body {
+padding: 2rem !important; /* کاهش پدینگ در موبایل */
+}
+
+.login-title {
+font-size: 1.5rem;
+}
+
+.login-card {
+border-radius: 10px;
+}
+}
