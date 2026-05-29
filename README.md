@@ -17,12 +17,14 @@ A lightweight, responsive, and modern login page built with **Bootstrap 5**. Thi
 
 ## 📸 Preview
 
+<img width="1365" height="836" alt="preview of modern login page" src="https://github.com/user-attachments/assets/ae8b7364-808a-418a-89aa-a46c659ff334" />
+
 
 ## 🚀 How to Use
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/bootstrap5-login-page.git
+git clone https://github.com/Alicode44/Professional-RTL-Login-Page.git
 ```
 
 ### 2. Include Bootstrap 5
@@ -46,5 +48,5 @@ Simply open `index.html` in your browser to view the login form.
 ```
 
 ## 🤝 Contact
-Developed by **Ali** - [Your Portfolio Link]
+Developed by Ali Valisoltani - https://github.com/Alicode44/Professional-RTL-Login-Page.git
 ```
